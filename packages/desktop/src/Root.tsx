@@ -8,7 +8,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { ErrorBoundary } from "react-error-boundary";
 import { atom, RecoilRoot } from "recoil";
-import { Store } from "tauri-plugin-store-api";
+import { createStore } from "@tauri-apps/plugin-store";
 import App from "./App";
 import {
   BlackjackGame,
@@ -31,7 +31,7 @@ import {
 } from "./types/Poker";
 import { DefaultKeybinds } from "./utils/DefaultKeybinds";
 
-export const TAURI_STORE = new Store(".data");
+export const TAURI_STORE = await createStore(".data");
 
 export const PLAYERS_STATE = atom<Player[]>({
   key: "PLAYERS",

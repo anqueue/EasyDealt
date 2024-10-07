@@ -2,65 +2,13 @@
   "build": {
     "beforeDevCommand": "yarn dev",
     "beforeBuildCommand": "yarn build",
-    "devPath": "http://localhost:1420",
-    "distDir": "../dist"
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
   },
-  "package": {
-    "productName": "cardgamesmanager",
-    "version": "2.3.1"
-  },
-  "tauri": {
-    "updater": {
-      "active": true,
-      "endpoints": ["https://i.mrauro.dev/cardgamesmanager.json"],
-      "dialog": true,
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEFDMTk2NDA5Rjk4QjlDQzYKUldUR25JdjVDV1FackhrUnlQQ3BOUHlyZHBTNWJhbFhWN0VVVlBHcHJhekxGSU41N3BvVG42WncK"
-    },
-    "allowlist": {
-      "dialog": {
-        "all": false,
-        "ask": false,
-        "confirm": false,
-        "message": true,
-        "open": true,
-        "save": true
-      },
-      "all": false,
-      "shell": {
-        "all": false,
-        "open": true
-      },
-      "fs": {
-        "all": false,
-        "copyFile": true,
-        "createDir": false,
-        "exists": false,
-        "readDir": false,
-        "readFile": true,
-        "removeDir": false,
-        "removeFile": false,
-        "renameFile": false,
-        "scope": ["$DESKTOP/keybindings.json", "$APPCONFIG/*.data"],
-        "writeFile": true
-      },
-      "app": {
-        "all": true,
-        "hide": false,
-        "show": false
-      }
-    },
-    "bundle": {
-      "active": true,
-      "targets": "all",
-      "identifier": "dev.mrauro.cardgamesmanager",
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ]
-    },
+  "identifier": "dev.mrauro.cardgamesmanager",
+  "productName": "cardgamesmanager",
+  "version": "2.3.1",
+  "app": {
     "security": {
       "csp": null
     },
@@ -74,6 +22,17 @@
         "minWidth": 541,
         "minHeight": 500
       }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
     ]
   }
 }
