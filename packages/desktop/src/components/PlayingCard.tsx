@@ -19,6 +19,7 @@ export default function PlayingCard({
   highContrast,
   strict,
   style,
+  twoTone,
 }: {
   card: Card;
   onClick: (card: Card) => void;
@@ -27,6 +28,7 @@ export default function PlayingCard({
   strict?: boolean;
   style?: MantineStyleProp;
   bgColorOverride?: MantineColor;
+  twoTone?: boolean;
 }) {
   const theme = useMantineTheme();
   const settings = useRecoilValue(SETTINGS_STATE);
@@ -60,7 +62,7 @@ export default function PlayingCard({
   let cardColor =
     getSuit(card) === "h" || getSuit(card) === "d" ? theme.colors.red[6] : theme.colors.dark[5];
 
-  if (settings.fourColorDeck) {
+  if (settings.fourColorDeck && !twoTone) {
     if (getSuit(card) === "d") {
       cardColor = theme.colors.blue[6];
     } else if (getSuit(card) === "c") {

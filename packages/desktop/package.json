@@ -25,6 +25,7 @@
     "@types/react-twemoji": "^0.4.3",
     "clsx": "^2.1.0",
     "immer": "^10.0.3",
+    "inferencejs": "^1.0.13",
     "lodash": "^4.17.21",
     "poker-variants-odds-calculator": "^0.0.3",
     "react": "18.3.1",
