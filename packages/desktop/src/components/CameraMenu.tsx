@@ -1,5 +1,3 @@
-// works good now
-
 import {
   Center,
   Code,
@@ -45,6 +43,18 @@ export default function CameraMenu() {
   const [modelWorkerId, setModelWorkerId] = useState<string | null>(null);
   const [modelLoaded, setModelLoaded] = useState<boolean>(false);
   const cameraDisabled = useRecoilValue(CAMERA_DISABLED);
+
+  const [, setForceUpdate] = useState({});
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setForceUpdate({});
+    }, 16); // Update roughly 60 times per second
+
+    return () => clearInterval(intervalId);
+  }, []);
+  useEffect(() => {
+    setDetectedCards((prevCards) => prevCards.filter((card) => card.expiresAt > Date.now()));
+  }, []);
 
   const settings = useRecoilValue(SETTINGS_STATE);
   const pokerGameState = useRecoilValue(POKER_GAME_STATE).gameState;
@@ -388,7 +398,7 @@ export default function CameraMenu() {
               disabled
               card={detectedCard.card}
               style={{
-                opacity: (detectedCard.expiresAt - Date.now()) / 1000,
+                opacity: Math.max(0, (detectedCard.expiresAt - Date.now()) / 1000),
               }}
               twoTone
             />
