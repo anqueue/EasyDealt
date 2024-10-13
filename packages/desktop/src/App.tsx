@@ -487,7 +487,7 @@ export default function App() {
               }}
             >
               <CameraMenu />
-              <Flex justify="center" style={{ marginTop: "auto" }} m="xs" gap="sm">
+              <Flex justify="center" style={{ marginTop: "auto" }} m="xs" gap="xs">
                 <Button
                   fullWidth
                   variant="subtle"
@@ -495,6 +495,7 @@ export default function App() {
                   onClick={() => {
                     setCameraDisabled(!cameraDisabled);
                   }}
+                  p="xs"
                 >
                   {cameraDisabled ? "Enable Camera" : "Disable Camera"}
                 </Button>
@@ -505,6 +506,7 @@ export default function App() {
                   onClick={() => {
                     emitCameraReset();
                   }}
+                  p="xs"
                 >
                   Reset
                 </Button>
@@ -518,6 +520,7 @@ export default function App() {
                       cameraMenu: false,
                     });
                   }}
+                  p="xs"
                 >
                   Close
                 </Button>
