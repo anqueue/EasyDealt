@@ -26,6 +26,8 @@ export const DEFAULT_SETTINGS: Settings = {
   roboflowPublishableKey: "",
   roboflowShowOverlay: true,
   roboflowFrameRate: 30,
+  roboflowMinimumConfidence: 0.5,
+  cameraDownscalingFactor: 1,
   cameraDeviceId: "",
   cameraFlipHorizontal: false,
   cameraMenu: false,
@@ -59,6 +61,8 @@ export type Settings = {
   roboflowPublishableKey: string;
   roboflowShowOverlay: boolean;
   roboflowFrameRate: number;
+  roboflowMinimumConfidence: number;
+  cameraDownscalingFactor: number;
   cameraDeviceId: string;
   cameraFlipHorizontal: boolean;
   cameraMenu: boolean;

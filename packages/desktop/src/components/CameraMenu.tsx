@@ -29,6 +29,7 @@ import { useHotkeys } from "react-hotkeys-hook";
 import { useRecoilValue } from "recoil";
 import PlayingCard from "./PlayingCard";
 import { InferenceEngine, CVImage } from "inferencejs";
+import { availableCards } from "@/types/Keybindings";
 
 export const { useCameraResetListener, emitCameraReset } = createEvent("cameraReset")();
 
@@ -44,7 +45,7 @@ export default function CameraMenu() {
   const [modelLoaded, setModelLoaded] = useState<boolean>(false);
   const cameraDisabled = useRecoilValue(CAMERA_DISABLED);
 
-  const [, setForceUpdate] = useState({});
+  const [forceUpdate, setForceUpdate] = useState({});
   useEffect(() => {
     const intervalId = setInterval(() => {
       setForceUpdate({});
@@ -52,9 +53,11 @@ export default function CameraMenu() {
 
     return () => clearInterval(intervalId);
   }, []);
+
   useEffect(() => {
-    setDetectedCards((prevCards) => prevCards.filter((card) => card.expiresAt > Date.now()));
-  }, []);
+    if (settings.cardRecognitionMode == "ROBOFLOW" && settings.roboflowFrameRate > 0)
+      setDetectedCards((prevCards) => prevCards.filter((card) => card.expiresAt > Date.now()));
+  }, [forceUpdate]);
 
   const settings = useRecoilValue(SETTINGS_STATE);
   const pokerGameState = useRecoilValue(POKER_GAME_STATE).gameState;
@@ -178,9 +181,20 @@ export default function CameraMenu() {
       const scaleX = canvas.width / video.videoWidth;
       const scaleY = canvas.height / video.videoHeight;
 
-      console.log(predictions);
-
       for (const prediction of predictions) {
+        // check if the prediction is a valid card
+        let detectedCard = `${prediction.class
+          .replace("10", "T")
+          .replace(/[SCHD]/g, (c: string) => c.toLowerCase())}` as Card;
+
+        if (!availableCards.includes(detectedCard)) {
+          continue;
+        }
+
+        if (settings.roboflowMinimumConfidence > prediction.confidence) {
+          continue;
+        }
+
         ctx.strokeStyle = prediction.color;
 
         // Scale and position the bounding box
@@ -201,10 +215,6 @@ export default function CameraMenu() {
         ctx.fillStyle = "black";
         ctx.fillText(label, x + 2, y - 10);
 
-        let detectedCard = `${prediction.class
-          .replace("10", "T")
-          .replace(/[SCHD]/g, (c: string) => c.toLowerCase())}` as Card;
-
         // append to detected cards
         setDetectedCards((detectedCards) => {
           // return [...detectedCards, { card: detectedCard, timestampFound: Date.now() }];
@@ -224,7 +234,7 @@ export default function CameraMenu() {
             updated.push({ card: detectedCard, expiresAt: Date.now() + 5000 });
           }
 
-          return updated.filter((card) => card.expiresAt > Date.now());
+          return updated;
         });
       }
 
@@ -351,6 +361,8 @@ export default function CameraMenu() {
             videoConstraints={{
               deviceId: settings.cameraDeviceId,
               facingMode: { ideal: "environment" },
+              width: 640 * settings.cameraDownscalingFactor,
+              height: 480 * settings.cameraDownscalingFactor,
             }}
             style={{
               width: "100%",
@@ -404,7 +416,10 @@ export default function CameraMenu() {
               disabled
               card={detectedCard.card}
               style={{
-                opacity: Math.max(0, (detectedCard.expiresAt - Date.now()) / 5000),
+                opacity:
+                  settings.cardRecognitionMode == "ROBOFLOW" && settings.roboflowFrameRate > 0
+                    ? Math.max(0, (detectedCard.expiresAt - Date.now()) / 5000)
+                    : 1,
               }}
               twoTone
             />

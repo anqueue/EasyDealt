@@ -219,7 +219,78 @@ export default function AIRecognitionSettings() {
             setSettings({ ...settings, roboflowShowOverlay: event.currentTarget.checked });
           }}
         />
+
+        <Input.Wrapper
+          label="Roboflow Minimum Confidence"
+          description="The minimum confidence level required to detect a card"
+          mt="sm"
+        >
+          <Slider
+            mt="xs"
+            defaultValue={settings.roboflowMinimumConfidence}
+            min={0}
+            max={1}
+            step={0.01}
+            marks={[
+              {
+                label: "0%",
+                value: 0,
+              },
+              {
+                label: "50%",
+                value: 0.5,
+              },
+              {
+                label: "100%",
+                value: 1,
+              },
+            ]}
+            onChangeEnd={(value) => {
+              setSettings({ ...settings, roboflowMinimumConfidence: value });
+            }}
+          />
+        </Input.Wrapper>
       </Collapse>
+
+      <Input.Wrapper
+        mb="xl"
+        label="Camera Scaling Factor"
+        description="Lower values will reduce CPU and RAM usage but may reduce recognition accuracy. 1x is 640x480"
+        mt="sm"
+      >
+        <Slider
+          mt="xs"
+          defaultValue={settings.cameraDownscalingFactor}
+          min={0.1}
+          max={3}
+          step={0.1}
+          marks={[
+            {
+              label: "0.1x",
+              value: 0.1,
+            },
+            {
+              label: "0.5x",
+              value: 0.5,
+            },
+            {
+              label: "1x",
+              value: 1,
+            },
+            {
+              label: "2x",
+              value: 2,
+            },
+            {
+              label: "3x",
+              value: 3,
+            },
+          ]}
+          onChangeEnd={(value) => {
+            setSettings({ ...settings, cameraDownscalingFactor: value });
+          }}
+        />
+      </Input.Wrapper>
 
       <Input.Wrapper
         mb="xl"
