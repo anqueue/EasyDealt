@@ -25,6 +25,7 @@ export const DEFAULT_SETTINGS: Settings = {
   roboflowModelVersion: 1,
   roboflowPublishableKey: "",
   roboflowShowOverlay: true,
+  roboflowFrameRate: 30,
   cameraDeviceId: "",
   cameraFlipHorizontal: false,
   cameraMenu: false,
@@ -57,6 +58,7 @@ export type Settings = {
   roboflowModelVersion: number;
   roboflowPublishableKey: string;
   roboflowShowOverlay: boolean;
+  roboflowFrameRate: number;
   cameraDeviceId: string;
   cameraFlipHorizontal: boolean;
   cameraMenu: boolean;

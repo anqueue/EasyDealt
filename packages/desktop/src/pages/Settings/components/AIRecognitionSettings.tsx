@@ -6,6 +6,8 @@ import {
   Collapse,
   Grid,
   Input,
+  InputWrapper,
+  NumberInput,
   PasswordInput,
   Select,
   Slider,
@@ -171,13 +173,34 @@ export default function AIRecognitionSettings() {
         <Input.Wrapper label="Roboflow Model Version" description="Default: 1" mt="xs">
           <Grid>
             <Grid.Col span={{ base: 4 }}>
-              <Input
+              <NumberInput
                 value={settings.roboflowModelVersion}
                 placeholder="Enter your Roboflow Model Version"
-                onChange={(event) => {
+                onChange={(value) => {
                   setSettings({
                     ...settings,
-                    roboflowModelVersion: parseInt(event.currentTarget.value),
+                    roboflowModelVersion: parseInt(`${value}`),
+                  });
+                }}
+              />
+            </Grid.Col>
+          </Grid>
+        </Input.Wrapper>
+
+        <Input.Wrapper
+          label="Roboflow Frame Rate"
+          description="If your device is too slow to handle a consistent frame rate, you may want to set this value to -1 and manually capture images by tapping the video."
+          mt="xs"
+        >
+          <Grid>
+            <Grid.Col span={{ base: 4 }}>
+              <NumberInput
+                value={settings.roboflowFrameRate}
+                placeholder="Enter your Roboflow Frame Rate"
+                onChange={(value) => {
+                  setSettings({
+                    ...settings,
+                    roboflowFrameRate: parseInt(`${value}`),
                   });
                 }}
               />

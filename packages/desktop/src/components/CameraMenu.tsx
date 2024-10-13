@@ -157,7 +157,8 @@ export default function CameraMenu() {
       !canvasRef.current ||
       cameraDisabled
     ) {
-      setTimeout(detectFrame, 100 / 3);
+      if (settings.roboflowFrameRate > 0)
+        setTimeout(detectFrame, 1000 / settings.roboflowFrameRate);
       return;
     }
 
@@ -213,21 +214,22 @@ export default function CameraMenu() {
           const updated = detectedCards.map((card) => {
             if (card.card == detectedCard) {
               found = true;
-              return { card: detectedCard, expiresAt: Date.now() + 1000 };
+              return { card: detectedCard, expiresAt: Date.now() + 5000 };
             } else {
               return card;
             }
           });
 
           if (!found) {
-            updated.push({ card: detectedCard, expiresAt: Date.now() + 1000 });
+            updated.push({ card: detectedCard, expiresAt: Date.now() + 5000 });
           }
 
           return updated.filter((card) => card.expiresAt > Date.now());
         });
       }
 
-      setTimeout(detectFrame, 100 / 3);
+      if (settings.roboflowFrameRate > 0)
+        setTimeout(detectFrame, 1000 / settings.roboflowFrameRate);
     });
   };
 
@@ -289,9 +291,12 @@ export default function CameraMenu() {
     if (!webcamRef.current) return;
     if (loading) return;
     if (resettingCamera) return;
-    if (settings.cardRecognitionMode == "ROBOFLOW") return;
-
-    setImage(webcamRef.current.getScreenshot());
+    if (settings.cardRecognitionMode == "ROBOFLOW") {
+      detectFrame();
+      return;
+    } else if (settings.cardRecognitionMode == "GEMINI") {
+      setImage(webcamRef.current.getScreenshot());
+    }
   };
 
   const addCard = (index: number) => {
@@ -315,7 +320,7 @@ export default function CameraMenu() {
         <div
           ref={webcamContainerRef}
           style={{
-            cursor: settings.cardRecognitionMode == "GEMINI" ? "pointer" : "default",
+            cursor: "pointer",
             position: "relative",
             width: "100%",
             height: "auto",
@@ -357,6 +362,7 @@ export default function CameraMenu() {
             <canvas
               ref={canvasRef}
               style={{
+                opacity: 0.5,
                 position: "absolute",
                 top: 0,
                 left: 0,
@@ -398,7 +404,7 @@ export default function CameraMenu() {
               disabled
               card={detectedCard.card}
               style={{
-                opacity: Math.max(0, (detectedCard.expiresAt - Date.now()) / 1000),
+                opacity: Math.max(0, (detectedCard.expiresAt - Date.now()) / 5000),
               }}
               twoTone
             />
