@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09B9A9FFF2016D52401FD3D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E53A94BDEEAC02DB7F144A3 /* QuartzCore.framework */; };
+		1A07DDDA0A6EBFB77C12DD28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870FC1184D6D1C541552DAE8 /* LaunchScreen.storyboard */; };
+		37360C9480D197CCAD4942E2 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA1D067AFF4C37D9E2B0FBD /* Metal.framework */; };
+		3F0DA827398C27F81FBA8F40 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD80891FE2BDCA4963ED792 /* MetalKit.framework */; };
+		4D49CCB574AA4244646762DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCB4CAD0583ADE0A92AF281 /* UIKit.framework */; };
+		61315BB2381FCCF97BE21296 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0990C68C4F793399DD8595A /* main.mm */; };
+		765F2DCDFEDDAE9602CF0C68 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96721B44DB223D3A1D1FA97B /* Security.framework */; };
+		8461B1B789047358C3B8C023 /* libapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB63B30FE81215B86B4A214 /* libapp.a */; };
+		93B35E9ED50083FDD8EC41C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F17FFB78122777997957328 /* Assets.xcassets */; };
+		AE27AF76AA5B4AE9B29A4352 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD6B62FFD7504EC7D7853C5 /* CoreGraphics.framework */; };
+		E1A1A1E1BD58923203F2E977 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 8721206EDDC764C7A22C2A7E /* assets */; };
+		E776331F2686685913AC25FA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13A73647AE2817032567D7A /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AA1D067AFF4C37D9E2B0FBD /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		2BE48A64933187B7B8D1EDDE /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		3AD6B62FFD7504EC7D7853C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		41B2437672C0D4FEEDE3FB7F /* cardgamesmanager_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cardgamesmanager_iOS.entitlements; sourceTree = "<group>"; };
+		4E53A94BDEEAC02DB7F144A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5CD80891FE2BDCA4963ED792 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		6EB63B30FE81215B86B4A214 /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+		77CAEB2333760362A6C9B17C /* cardgamesmanager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardgamesmanager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1D525C3F97796252815730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		870FC1184D6D1C541552DAE8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8721206EDDC764C7A22C2A7E /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		96721B44DB223D3A1D1FA97B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9F17FFB78122777997957328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A13A73647AE2817032567D7A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AFCB4CAD0583ADE0A92AF281 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8B9757899B8FCAD13CEE046 /* main.rs */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.rs; sourceTree = "<group>"; };
+		F0990C68C4F793399DD8595A /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		617F2FDE59261F6F99DB2B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8461B1B789047358C3B8C023 /* libapp.a in Frameworks */,
+				AE27AF76AA5B4AE9B29A4352 /* CoreGraphics.framework in Frameworks */,
+				37360C9480D197CCAD4942E2 /* Metal.framework in Frameworks */,
+				3F0DA827398C27F81FBA8F40 /* MetalKit.framework in Frameworks */,
+				09B9A9FFF2016D52401FD3D7 /* QuartzCore.framework in Frameworks */,
+				765F2DCDFEDDAE9602CF0C68 /* Security.framework in Frameworks */,
+				4D49CCB574AA4244646762DD /* UIKit.framework in Frameworks */,
+				E776331F2686685913AC25FA /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32B297FB2C8B811DA0E85EAD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D8B9757899B8FCAD13CEE046 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		3C16FBC8792E17D4B1007632 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				75C95C2B7B336D111EAD8CB9 /* cardgamesmanager */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		45580F3B0107608D2C6DC992 /* cardgamesmanager_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				41B2437672C0D4FEEDE3FB7F /* cardgamesmanager_iOS.entitlements */,
+				7B1D525C3F97796252815730 /* Info.plist */,
+			);
+			path = cardgamesmanager_iOS;
+			sourceTree = "<group>";
+		};
+		6AF353525DC4B9DE2AAEBC59 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		75C95C2B7B336D111EAD8CB9 /* cardgamesmanager */ = {
+			isa = PBXGroup;
+			children = (
+				F0990C68C4F793399DD8595A /* main.mm */,
+				E40C92FB849DB3BE6B65E86A /* bindings */,
+			);
+			path = cardgamesmanager;
+			sourceTree = "<group>";
+		};
+		78A008160437760290850204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AD6B62FFD7504EC7D7853C5 /* CoreGraphics.framework */,
+				6EB63B30FE81215B86B4A214 /* libapp.a */,
+				1AA1D067AFF4C37D9E2B0FBD /* Metal.framework */,
+				5CD80891FE2BDCA4963ED792 /* MetalKit.framework */,
+				4E53A94BDEEAC02DB7F144A3 /* QuartzCore.framework */,
+				96721B44DB223D3A1D1FA97B /* Security.framework */,
+				AFCB4CAD0583ADE0A92AF281 /* UIKit.framework */,
+				A13A73647AE2817032567D7A /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C75CF6BBB1FB686417A12A5 = {
+			isa = PBXGroup;
+			children = (
+				8721206EDDC764C7A22C2A7E /* assets */,
+				9F17FFB78122777997957328 /* Assets.xcassets */,
+				870FC1184D6D1C541552DAE8 /* LaunchScreen.storyboard */,
+				45580F3B0107608D2C6DC992 /* cardgamesmanager_iOS */,
+				6AF353525DC4B9DE2AAEBC59 /* Externals */,
+				3C16FBC8792E17D4B1007632 /* Sources */,
+				32B297FB2C8B811DA0E85EAD /* src */,
+				78A008160437760290850204 /* Frameworks */,
+				DDD5EE132F58C67DF0F5D65D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDD5EE132F58C67DF0F5D65D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77CAEB2333760362A6C9B17C /* cardgamesmanager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E40C92FB849DB3BE6B65E86A /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				2BE48A64933187B7B8D1EDDE /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCBD23588A0155AD423DBA4F /* cardgamesmanager_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C592BF1756C5E3584A093A /* Build configuration list for PBXNativeTarget "cardgamesmanager_iOS" */;
+			buildPhases = (
+				6594FEF02412042A0A1D0932 /* Build Rust Code */,
+				BF0C77CD1FBEC84256E6372E /* Sources */,
+				AF5DCBC79C74ABB7FE3CA504 /* Resources */,
+				617F2FDE59261F6F99DB2B41 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cardgamesmanager_iOS;
+			productName = cardgamesmanager_iOS;
+			productReference = 77CAEB2333760362A6C9B17C /* cardgamesmanager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9250E7201FA1751A64C2496B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 7BAE3657E4DB7692A8E3C2F7 /* Build configuration list for PBXProject "cardgamesmanager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7C75CF6BBB1FB686417A12A5;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCBD23588A0155AD423DBA4F /* cardgamesmanager_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF5DCBC79C74ABB7FE3CA504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B35E9ED50083FDD8EC41C2 /* Assets.xcassets in Resources */,
+				1A07DDDA0A6EBFB77C12DD28 /* LaunchScreen.storyboard in Resources */,
+				E1A1A1E1BD58923203F2E977 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6594FEF02412042A0A1D0932 /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64-sim/${CONFIGURATION}/libapp.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "yarn tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0C77CD1FBEC84256E6372E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61315BB2381FCCF97BE21296 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		05BC26B7FAB7CC1F0E5B831E /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+		4B0E4919B8B400AF029D2768 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cardgamesmanager_iOS/cardgamesmanager_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7668ZKUJTR;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = cardgamesmanager_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mrauro.cardgamesmanager;
+				PRODUCT_NAME = cardgamesmanager;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = debug;
+		};
+		5A7B19D63F3817D5EAA1CB8F /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+		E30B7EA40BBC4576F252ECFB /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cardgamesmanager_iOS/cardgamesmanager_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7668ZKUJTR;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = cardgamesmanager_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION)",
+					"$(SDKROOT)/usr/lib/swift",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mrauro.cardgamesmanager;
+				PRODUCT_NAME = cardgamesmanager;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29C592BF1756C5E3584A093A /* Build configuration list for PBXNativeTarget "cardgamesmanager_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B0E4919B8B400AF029D2768 /* debug */,
+				E30B7EA40BBC4576F252ECFB /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		7BAE3657E4DB7692A8E3C2F7 /* Build configuration list for PBXProject "cardgamesmanager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A7B19D63F3817D5EAA1CB8F /* debug */,
+				05BC26B7FAB7CC1F0E5B831E /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9250E7201FA1751A64C2496B /* Project object */;
+}
