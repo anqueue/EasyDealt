@@ -988,6 +988,8 @@ export default function DevTools() {
                   setSettings(newData[key]);
                 } else if (key === "chips") {
                   setChips(newData[key]);
+                } else if (key === "keybindings") {
+                  setKeybindings(newData[key]);
                 }
               }
             }}
@@ -1007,6 +1009,7 @@ export default function DevTools() {
                 pokerGame,
                 settings,
                 chips,
+                keybindings,
               };
 
               setExporterData(JSON.stringify(data, null, 2));
@@ -1028,6 +1031,7 @@ export default function DevTools() {
                 pokerGame,
                 settings,
                 chips,
+                keybindings,
               };
 
               setExporterData(JSON.stringify(data));
