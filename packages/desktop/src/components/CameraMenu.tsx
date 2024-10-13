@@ -1,4 +1,5 @@
 import {
+  Button,
   Center,
   Code,
   Container,
@@ -426,6 +427,22 @@ export default function CameraMenu() {
           </>
         ))}
       </Container>
+
+      {settings.cardRecognitionMode == "ROBOFLOW" &&
+        settings.roboflowFrameRate < 0 &&
+        detectedCards.length > 0 && (
+          <Button
+            mt="lg"
+            fullWidth
+            color="gray"
+            variant="light"
+            onClick={() => {
+              setDetectedCards([]);
+            }}
+          >
+            Clear
+          </Button>
+        )}
 
       {settings.cardRecognitionMode == "GEMINI" && (
         <>
