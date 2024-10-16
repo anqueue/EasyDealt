@@ -174,6 +174,7 @@ export default function AIRecognitionSettings() {
           <Grid>
             <Grid.Col span={{ base: 4 }}>
               <NumberInput
+                mt={5}
                 value={settings.roboflowModelVersion}
                 placeholder="Enter your Roboflow Model Version"
                 onChange={(value) => {
@@ -195,6 +196,7 @@ export default function AIRecognitionSettings() {
           <Grid>
             <Grid.Col span={{ base: 4 }}>
               <NumberInput
+                mt={5}
                 value={settings.roboflowFrameRate}
                 placeholder="Enter your Roboflow Frame Rate"
                 onChange={(value) => {
