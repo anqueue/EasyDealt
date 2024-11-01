@@ -27,7 +27,7 @@ export default function HowItWorks() {
         <Title order={2} c="white" size={rem(45)} fw="bold">
           Set Up Your Game in Minutes
         </Title>
-        <Text>See how easy it is to start using Card Games Manager in three simple steps:</Text>
+        <Text>See how easy it is to start using EasyDealt in three simple steps:</Text>
       </Container>
       <Section
         title="Set Up Players"

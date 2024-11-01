@@ -5,8 +5,8 @@
     "devUrl": "http://localhost:1420",
     "frontendDist": "../dist"
   },
-  "identifier": "dev.mrauro.cardgamesmanager",
-  "productName": "cardgamesmanager",
+  "identifier": "com.easydealt",
+  "productName": "easydealt",
   "version": "3.0.0",
   "app": {
     "security": {
@@ -16,7 +16,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Card Games Manager",
+        "title": "EasyDealt",
         "width": 800,
         "height": 600,
         "minWidth": 541,

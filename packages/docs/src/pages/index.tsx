@@ -112,7 +112,7 @@ export default function Home(): JSX.Element {
                   }}
                 />
                 <Title order={1} c="gray.1" size="1.5rem" fw={700}>
-                  CardGamesManager
+                  easydealt
                 </Title>
               </Flex>
 
@@ -195,7 +195,7 @@ export default function Home(): JSX.Element {
                   radius={0}
                   size="lg"
                   component="a"
-                  href="https://github.com/mrauro/cardgamesmanager"
+                  href="https://github.com/anqueue/easydealt"
                   target="_blank"
                 >
                   <Image src="/img/github-mark-white.svg" alt="GitHub" width={25} height={25} />
