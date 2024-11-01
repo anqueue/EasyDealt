@@ -64,8 +64,8 @@ export function HeroBullets() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Text size="md">
-              Streamline your game management with CardGamesManager. Effortlessly manage your
-              Blackjack and Poker games with a few clicks and ensure a smooth gaming experience.
+              Streamline your game management with easydealt. Effortlessly manage your Blackjack and
+              Poker games with a few clicks and ensure a smooth gaming experience.
             </Text>
           </motion.div>
           <List

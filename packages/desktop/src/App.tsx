@@ -97,7 +97,7 @@ export default function App() {
           <Title order={3}>License</Title>
           <Text>
             This work is licensed under the{" "}
-            <a href="https://github.com/mrauro/cardgamesmanager/tree/main/LICENSE" target="_blank">
+            <a href="https://github.com/anqueue/EasyDealt/tree/main/LICENSE" target="_blank">
               Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
             </a>{" "}
             You are free to share and adapt this work for non-commercial purposes as long as you
@@ -130,7 +130,7 @@ export default function App() {
             the Settings page.
             <Text mt="lg">
               If you have any questions or concerns, please contact the creator at{" "}
-              <a href="mailto:cardgamesmanager@mrauro.dev">cardgamesmanager@mrauro.dev</a>
+              <a href="mailto:support@easydealt.com">support@easydealt.com</a>
             </Text>
           </Text>
         </>

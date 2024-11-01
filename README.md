@@ -1,4 +1,4 @@
-# Card Games Manager
+# EasyDealt
 
 Manage your various card games with this app (in development).
 
@@ -19,7 +19,7 @@ Coming soon...
 ## Installation
 
 Builds are currently only available for Windows. You can download the latest release
-[here](https://github.com/MrAuro/CardGamesManager/releases).
+[here](https://github.com/anqueue/EasyDealt/releases).
 
 ## Development
 
@@ -49,12 +49,11 @@ directory to install the required packages. Then run `yarn tauri dev` to start t
 ![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)
 
 This work is licensed under the
-<a href="https://github.com/mrauro/cardgamesmanager/tree/main/LICENSE" target="_blank">Creative
-Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a> You are free to share
-and adapt this work for non-commercial purposes as long as you give appropriate credit and
-distribute your contributions under the same license. Commercial licenses may be available upon
-request. If you have any questions or would like to request a commercial license, please contact the
-creator.
+<a href="https://github.com/anqueue/EasyDealt/tree/main/LICENSE" target="_blank">Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License.</a> You are free to share and adapt
+this work for non-commercial purposes as long as you give appropriate credit and distribute your
+contributions under the same license. Commercial licenses may be available upon request. If you have
+any questions or would like to request a commercial license, please contact the creator.
 
 ## Disclaimer
 
@@ -72,4 +71,4 @@ damages or losses incurred from the use of this tool.
 ## Contact
 
 If you have any questions or concerns, please contact the creator at
-<a href="mailto:cardgamesmanager@mrauro.dev">cardgamesmanager@mrauro.dev</a>
+<a href="mailto:support@easydealt.com">support@easydealt.com</a>

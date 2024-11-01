@@ -3,13 +3,13 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "CardGamesManager",
+  title: "EasyDealt",
   tagline: "Empower your card game experience",
   favicon: "img/favicon.ico",
-  url: "https://cardgamesmanager.mrauro.dev",
+  url: "https://easydealt.com",
   baseUrl: "/",
-  organizationName: "mrauro",
-  projectName: "cardgamesmanager",
+  organizationName: "anqueue",
+  projectName: "easydealt",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -25,7 +25,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/mrauro/cardgamesmanager/tree/main/packages/docs/",
+          editUrl: "https://github.com/anqueue/easydealt/tree/main/packages/docs/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -42,7 +42,7 @@ const config: Config = {
     },
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "CardGamesManager",
+      title: "easydealt",
       logo: {
         alt: "Logo",
         src: "img/logo.png",
@@ -57,7 +57,7 @@ const config: Config = {
         {
           position: "right",
           type: "html",
-          value: `<a href="https://github.com/mrauro/cardgamesmanager" target="_blank" style="content: \'\'; width: 24px; height: 24px; background-image: url(\'img/github-mark-white.svg\'); background-repeat: no-repeat;  background-size: 24px 24px; display: flex">`,
+          value: `<a href="https://github.com/anqueue/easydealt" target="_blank" style="content: \'\'; width: 24px; height: 24px; background-image: url(\'img/github-mark-white.svg\'); background-repeat: no-repeat;  background-size: 24px 24px; display: flex">`,
         },
       ],
     },
@@ -91,12 +91,12 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/mrauro/cardgamesmanager",
+              href: "https://github.com/anqueue/easydealt",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} MrAuro • Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Andrew • Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.dracula,

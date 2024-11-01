@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FCBD23588A0155AD423DBA4F"
-               BuildableName = "cardgamesmanager.app"
-               BlueprintName = "cardgamesmanager_iOS"
-               ReferencedContainer = "container:cardgamesmanager.xcodeproj">
+               BuildableName = "easydealt.app"
+               BlueprintName = "easydealt_iOS"
+               ReferencedContainer = "container:easydealt.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FCBD23588A0155AD423DBA4F"
-            BuildableName = "cardgamesmanager.app"
-            BlueprintName = "cardgamesmanager_iOS"
-            ReferencedContainer = "container:cardgamesmanager.xcodeproj">
+            BuildableName = "easydealt.app"
+            BlueprintName = "easydealt_iOS"
+            ReferencedContainer = "container:easydealt.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <EnvironmentVariables>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FCBD23588A0155AD423DBA4F"
-            BuildableName = "cardgamesmanager.app"
-            BlueprintName = "cardgamesmanager_iOS"
-            ReferencedContainer = "container:cardgamesmanager.xcodeproj">
+            BuildableName = "easydealt.app"
+            BlueprintName = "easydealt_iOS"
+            ReferencedContainer = "container:easydealt.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FCBD23588A0155AD423DBA4F"
-            BuildableName = "cardgamesmanager.app"
-            BlueprintName = "cardgamesmanager_iOS"
-            ReferencedContainer = "container:cardgamesmanager.xcodeproj">
+            BuildableName = "easydealt.app"
+            BlueprintName = "easydealt_iOS"
+            ReferencedContainer = "container:easydealt.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>

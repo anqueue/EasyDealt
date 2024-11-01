@@ -1,6 +1,6 @@
-name: cardgamesmanager
+name: easydealt
 options:
-  bundleIdPrefix: dev.mrauro.cardgamesmanager
+  bundleIdPrefix: com.easydealt
   deploymentTarget:
     iOS: 13.0
 fileGroups: [../../src]
@@ -10,8 +10,8 @@ configs:
 settingGroups:
   app:
     base:
-      PRODUCT_NAME: cardgamesmanager
-      PRODUCT_BUNDLE_IDENTIFIER: dev.mrauro.cardgamesmanager
+      PRODUCT_NAME: easydealt
+      PRODUCT_BUNDLE_IDENTIFIER: com.easydealt
 targetTemplates:
   app:
     type: application
@@ -24,20 +24,20 @@ targetTemplates:
     settings:
       groups: [app]
 targets:
-  cardgamesmanager_iOS:
+  easydealt_iOS:
     type: application
     platform: iOS
     sources:
       - path: Sources
       - path: Assets.xcassets
       - path: Externals
-      - path: cardgamesmanager_iOS
+      - path: easydealt_iOS
       - path: assets
         buildPhase: resources
         type: folder
       - path: LaunchScreen.storyboard
     info:
-      path: cardgamesmanager_iOS/Info.plist
+      path: easydealt_iOS/Info.plist
       properties:
         LSRequiresIPhoneOS: true
         UILaunchStoryboardName: LaunchScreen
@@ -54,7 +54,7 @@ targets:
         CFBundleShortVersionString: 3.0.0
         CFBundleVersion: 3.0.0
     entitlements:
-      path: cardgamesmanager_iOS/cardgamesmanager_iOS.entitlements
+      path: easydealt_iOS/easydealt_iOS.entitlements
     scheme:
       environmentVariables:
         RUST_BACKTRACE: full

@@ -1,13 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 
-target 'cardgamesmanager_iOS' do
+target 'easydealt_iOS' do
 platform :ios, '13.0'
-  # Pods for cardgamesmanager_iOS
+  # Pods for easydealt_iOS
 end
 
-target 'cardgamesmanager_macOS' do
+target 'easydealt_macOS' do
 platform :osx, '11.0'
-  # Pods for cardgamesmanager_macOS
+  # Pods for easydealt_macOS
 end
 
 # Delete the deployment target for iOS and macOS, causing it to be inherited from the Podfile

@@ -1,8 +1,8 @@
 [package]
-name = "cardgamesmanager"
+name = "easydealt"
 version = "0.0.0"
-description = "Card Games Manager"
-authors = ["you"]
+description = "EasyDealt"
+authors = ["anqueue"]
 license = ""
 repository = ""
 edition = "2021"

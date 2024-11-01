@@ -25,11 +25,11 @@
 		1AA1D067AFF4C37D9E2B0FBD /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		2BE48A64933187B7B8D1EDDE /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
 		3AD6B62FFD7504EC7D7853C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		41B2437672C0D4FEEDE3FB7F /* cardgamesmanager_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cardgamesmanager_iOS.entitlements; sourceTree = "<group>"; };
+		41B2437672C0D4FEEDE3FB7F /* easydealt_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = easydealt_iOS.entitlements; sourceTree = "<group>"; };
 		4E53A94BDEEAC02DB7F144A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5CD80891FE2BDCA4963ED792 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		6EB63B30FE81215B86B4A214 /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
-		77CAEB2333760362A6C9B17C /* cardgamesmanager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardgamesmanager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CAEB2333760362A6C9B17C /* easydealt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easydealt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1D525C3F97796252815730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		870FC1184D6D1C541552DAE8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8721206EDDC764C7A22C2A7E /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
@@ -72,18 +72,18 @@
 		3C16FBC8792E17D4B1007632 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				75C95C2B7B336D111EAD8CB9 /* cardgamesmanager */,
+				75C95C2B7B336D111EAD8CB9 /* easydealt */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		45580F3B0107608D2C6DC992 /* cardgamesmanager_iOS */ = {
+		45580F3B0107608D2C6DC992 /* easydealt_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				41B2437672C0D4FEEDE3FB7F /* cardgamesmanager_iOS.entitlements */,
+				41B2437672C0D4FEEDE3FB7F /* easydealt_iOS.entitlements */,
 				7B1D525C3F97796252815730 /* Info.plist */,
 			);
-			path = cardgamesmanager_iOS;
+			path = easydealt_iOS;
 			sourceTree = "<group>";
 		};
 		6AF353525DC4B9DE2AAEBC59 /* Externals */ = {
@@ -93,13 +93,13 @@
 			path = Externals;
 			sourceTree = "<group>";
 		};
-		75C95C2B7B336D111EAD8CB9 /* cardgamesmanager */ = {
+		75C95C2B7B336D111EAD8CB9 /* easydealt */ = {
 			isa = PBXGroup;
 			children = (
 				F0990C68C4F793399DD8595A /* main.mm */,
 				E40C92FB849DB3BE6B65E86A /* bindings */,
 			);
-			path = cardgamesmanager;
+			path = easydealt;
 			sourceTree = "<group>";
 		};
 		78A008160437760290850204 /* Frameworks */ = {
@@ -123,7 +123,7 @@
 				8721206EDDC764C7A22C2A7E /* assets */,
 				9F17FFB78122777997957328 /* Assets.xcassets */,
 				870FC1184D6D1C541552DAE8 /* LaunchScreen.storyboard */,
-				45580F3B0107608D2C6DC992 /* cardgamesmanager_iOS */,
+				45580F3B0107608D2C6DC992 /* easydealt_iOS */,
 				6AF353525DC4B9DE2AAEBC59 /* Externals */,
 				3C16FBC8792E17D4B1007632 /* Sources */,
 				32B297FB2C8B811DA0E85EAD /* src */,
@@ -135,7 +135,7 @@
 		DDD5EE132F58C67DF0F5D65D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77CAEB2333760362A6C9B17C /* cardgamesmanager.app */,
+				77CAEB2333760362A6C9B17C /* easydealt.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FCBD23588A0155AD423DBA4F /* cardgamesmanager_iOS */ = {
+		FCBD23588A0155AD423DBA4F /* easydealt_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29C592BF1756C5E3584A093A /* Build configuration list for PBXNativeTarget "cardgamesmanager_iOS" */;
+			buildConfigurationList = 29C592BF1756C5E3584A093A /* Build configuration list for PBXNativeTarget "easydealt_iOS" */;
 			buildPhases = (
 				6594FEF02412042A0A1D0932 /* Build Rust Code */,
 				BF0C77CD1FBEC84256E6372E /* Sources */,
@@ -164,9 +164,9 @@
 			);
 			dependencies = (
 			);
-			name = cardgamesmanager_iOS;
-			productName = cardgamesmanager_iOS;
-			productReference = 77CAEB2333760362A6C9B17C /* cardgamesmanager.app */;
+			name = easydealt_iOS;
+			productName = easydealt_iOS;
+			productReference = 77CAEB2333760362A6C9B17C /* easydealt.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +178,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = 7BAE3657E4DB7692A8E3C2F7 /* Build configuration list for PBXProject "cardgamesmanager" */;
+			buildConfigurationList = 7BAE3657E4DB7692A8E3C2F7 /* Build configuration list for PBXProject "easydealt" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -190,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FCBD23588A0155AD423DBA4F /* cardgamesmanager_iOS */,
+				FCBD23588A0155AD423DBA4F /* easydealt_iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -310,7 +310,7 @@
 					"arm64-sim",
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = cardgamesmanager_iOS/cardgamesmanager_iOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = easydealt_iOS/easydealt_iOS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7668ZKUJTR;
@@ -321,7 +321,7 @@
 					"$(inherited)",
 					"\".\"",
 				);
-				INFOPLIST_FILE = cardgamesmanager_iOS/Info.plist;
+				INFOPLIST_FILE = easydealt_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,8 +347,8 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.mrauro.cardgamesmanager;
-				PRODUCT_NAME = cardgamesmanager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.easydealt;
+				PRODUCT_NAME = easydealt;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,7 +428,7 @@
 					"arm64-sim",
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = cardgamesmanager_iOS/cardgamesmanager_iOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = easydealt_iOS/easydealt_iOS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7668ZKUJTR;
@@ -439,7 +439,7 @@
 					"$(inherited)",
 					"\".\"",
 				);
-				INFOPLIST_FILE = cardgamesmanager_iOS/Info.plist;
+				INFOPLIST_FILE = easydealt_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,8 +465,8 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
 					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.mrauro.cardgamesmanager;
-				PRODUCT_NAME = cardgamesmanager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.easydealt;
+				PRODUCT_NAME = easydealt;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -477,7 +477,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		29C592BF1756C5E3584A093A /* Build configuration list for PBXNativeTarget "cardgamesmanager_iOS" */ = {
+		29C592BF1756C5E3584A093A /* Build configuration list for PBXNativeTarget "easydealt_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B0E4919B8B400AF029D2768 /* debug */,
@@ -486,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = debug;
 		};
-		7BAE3657E4DB7692A8E3C2F7 /* Build configuration list for PBXProject "cardgamesmanager" */ = {
+		7BAE3657E4DB7692A8E3C2F7 /* Build configuration list for PBXProject "easydealt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A7B19D63F3817D5EAA1CB8F /* debug */,
