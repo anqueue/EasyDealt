@@ -112,7 +112,7 @@ export default function Home(): JSX.Element {
                   }}
                 />
                 <Title order={1} c="gray.1" size="1.5rem" fw={700}>
-                  easydealt
+                  EasyDealt
                 </Title>
               </Flex>
 
