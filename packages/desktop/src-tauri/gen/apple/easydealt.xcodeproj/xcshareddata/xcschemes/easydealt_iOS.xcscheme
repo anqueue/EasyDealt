@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FCBD23588A0155AD423DBA4F"
+               BlueprintIdentifier = "713499AB9C5B892C4D06884E"
                BuildableName = "easydealt.app"
                BlueprintName = "easydealt_iOS"
                ReferencedContainer = "container:easydealt.xcodeproj">
@@ -30,7 +30,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FCBD23588A0155AD423DBA4F"
+            BlueprintIdentifier = "713499AB9C5B892C4D06884E"
             BuildableName = "easydealt.app"
             BlueprintName = "easydealt_iOS"
             ReferencedContainer = "container:easydealt.xcodeproj">
@@ -65,7 +65,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FCBD23588A0155AD423DBA4F"
+            BlueprintIdentifier = "713499AB9C5B892C4D06884E"
             BuildableName = "easydealt.app"
             BlueprintName = "easydealt_iOS"
             ReferencedContainer = "container:easydealt.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FCBD23588A0155AD423DBA4F"
+            BlueprintIdentifier = "713499AB9C5B892C4D06884E"
             BuildableName = "easydealt.app"
             BlueprintName = "easydealt_iOS"
             ReferencedContainer = "container:easydealt.xcodeproj">

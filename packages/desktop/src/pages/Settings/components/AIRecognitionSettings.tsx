@@ -6,7 +6,6 @@ import {
   Collapse,
   Grid,
   Input,
-  InputWrapper,
   NumberInput,
   PasswordInput,
   Select,

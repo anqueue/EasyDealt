@@ -12,17 +12,7 @@ import {
 import { Player } from "@/types/Player";
 import { DefaultKeybinds } from "@/utils/DefaultKeybinds";
 import { useRecoilImmerState } from "@/utils/RecoilImmer";
-import {
-  Button,
-  Checkbox,
-  Collapse,
-  Flex,
-  JsonInput,
-  Paper,
-  Text,
-  Textarea,
-  TextInput,
-} from "@mantine/core";
+import { Button, Checkbox, Collapse, Flex, JsonInput, Paper, Text, Textarea } from "@mantine/core";
 import { getHotkeyHandler } from "@mantine/hooks";
 import { notifications } from "@mantine/notifications";
 import { useEffect, useState } from "react";
