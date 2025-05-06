@@ -2,6 +2,8 @@
 
 Manage your various card games with this app (in development).
 
+[easydealt.com](https://easydealt.com)
+
 ---
 
 ## Blackjack
@@ -12,14 +14,17 @@ Manage your various card games with this app (in development).
 
 ## Poker
 
-Coming soon...
+<video src="./resources/poker.mp4" controls></video>
+
+## Settings
+
+<video src="./resources/settings.mp4" controls></video>
 
 ---
 
 ## Installation
 
-Builds are currently only available for Windows. You can download the latest release
-[here](https://github.com/anqueue/EasyDealt/releases).
+You can download the latest release [here](https://github.com/anqueue/EasyDealt/releases).
 
 ## Development
 
